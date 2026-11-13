@@ -2,11 +2,11 @@
 
 > **One fast, searchable, AI-enhanced hub for all your dev knowledge & resources.**
 
-| | |
-|---|---|
-| **Status** | Planning |
-| **Type** | SaaS (freemium) |
-| **Stack** | Next.js 16 · React 19 · TypeScript · Prisma 7 · Neon Postgres · Auth.js v5 · Tailwind v4 · shadcn/ui · Cloudflare R2 · OpenAI |
+|            |                                                                                                                               |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| **Status** | Planning                                                                                                                      |
+| **Type**   | SaaS (freemium)                                                                                                               |
+| **Stack**  | Next.js 16 · React 19 · TypeScript · Prisma 7 · Neon Postgres · Auth.js v5 · Tailwind v4 · shadcn/ui · Cloudflare R2 · OpenAI |
 
 ---
 
@@ -30,16 +30,16 @@
 
 Developers keep their essentials scattered across many tools:
 
-| What | Where it usually lives |
-|---|---|
-| Code snippets | VS Code, Notion |
-| AI prompts | Old chat threads |
-| Context files | Buried in project folders |
-| Useful links | Browser bookmarks |
-| Docs | Random folders |
-| Commands | `.txt` files |
-| Project templates | GitHub Gists |
-| Terminal commands | Bash history |
+| What              | Where it usually lives    |
+| ----------------- | ------------------------- |
+| Code snippets     | VS Code, Notion           |
+| AI prompts        | Old chat threads          |
+| Context files     | Buried in project folders |
+| Useful links      | Browser bookmarks         |
+| Docs              | Random folders            |
+| Commands          | `.txt` files              |
+| Project templates | GitHub Gists              |
+| Terminal commands | Bash history              |
 
 **Result:** context switching, lost knowledge, and inconsistent workflows.
 
@@ -49,12 +49,12 @@ Developers keep their essentials scattered across many tools:
 
 ## 2. Target Users
 
-| Persona | Primary need |
-|---|---|
-| 🧑‍💻 **Everyday Developer** | Quickly grab snippets, prompts, commands, and links |
-| 🤖 **AI-first Developer** | Save prompts, contexts, workflows, and system messages |
-| 🎓 **Content Creator / Educator** | Store code blocks, explanations, and course notes |
-| 🏗️ **Full-stack Builder** | Collect patterns, boilerplates, and API examples |
+| Persona                           | Primary need                                           |
+| --------------------------------- | ------------------------------------------------------ |
+| 🧑‍💻 **Everyday Developer**         | Quickly grab snippets, prompts, commands, and links    |
+| 🤖 **AI-first Developer**         | Save prompts, contexts, workflows, and system messages |
+| 🎓 **Content Creator / Educator** | Store code blocks, explanations, and course notes      |
+| 🏗️ **Full-stack Builder**         | Collect patterns, boilerplates, and API examples       |
 
 ---
 
@@ -64,15 +64,15 @@ Developers keep their essentials scattered across many tools:
 
 Every item has a **type**. DevStash ships with fixed **system types** that users cannot edit or delete. Users can add **custom types** later (Pro).
 
-| Type | Content kind | Plan | Route |
-|---|---|---|---|
-| Snippet | Text | Free | `/items/snippets` |
-| Prompt | Text | Free | `/items/prompts` |
-| Note | Text | Free | `/items/notes` |
-| Command | Text | Free | `/items/commands` |
-| Link | URL | Free | `/items/links` |
-| File | File | **Pro** | `/items/files` |
-| Image | File | **Pro** | `/items/images` |
+| Type    | Content kind | Plan    | Route             |
+| ------- | ------------ | ------- | ----------------- |
+| Snippet | Text         | Free    | `/items/snippets` |
+| Prompt  | Text         | Free    | `/items/prompts`  |
+| Note    | Text         | Free    | `/items/notes`    |
+| Command | Text         | Free    | `/items/commands` |
+| Link    | URL          | Free    | `/items/links`    |
+| File    | File         | **Pro** | `/items/files`    |
+| Image   | File         | **Pro** | `/items/images`   |
 
 - **Content kinds:** `TEXT` (snippet, prompt, note, command), `URL` (link), `FILE` (file, image)
 - Items open and are created in a **quick-access drawer**, not a separate page
@@ -81,7 +81,7 @@ Every item has a **type**. DevStash ships with fixed **system types** that users
 
 - A collection can hold items of **any type**
 - An item can belong to **multiple collections** (many-to-many)
-  - e.g. a React snippet lives in both *React Patterns* and *Interview Prep*
+  - e.g. a React snippet lives in both _React Patterns_ and _Interview Prep_
 - Examples:
   - **React Patterns** (snippets, notes)
   - **Context Files** (files)
@@ -120,12 +120,12 @@ Search across:
 
 Powered by **OpenAI `gpt-5-nano`**.
 
-| Feature | Description |
-|---|---|
-| 🏷️ Auto-tag suggestions | Suggest tags from item content |
-| 📄 Summaries | Short summary of long notes, files, or prompts |
-| 🧠 Explain This Code | Plain-English explanation of a snippet |
-| ✨ Prompt Optimizer | Rewrite a prompt to be clearer and more effective |
+| Feature                 | Description                                       |
+| ----------------------- | ------------------------------------------------- |
+| 🏷️ Auto-tag suggestions | Suggest tags from item content                    |
+| 📄 Summaries            | Short summary of long notes, files, or prompts    |
+| 🧠 Explain This Code    | Plain-English explanation of a snippet            |
+| ✨ Prompt Optimizer     | Rewrite a prompt to be clearer and more effective |
 
 ---
 
@@ -408,13 +408,13 @@ model Tag {
 ```ts
 // prisma/seed.ts — ROUGH DRAFT
 const systemTypes = [
-  { name: "snippet", slug: "snippets", icon: "Code",       color: "#3b82f6" },
-  { name: "prompt",  slug: "prompts",  icon: "Sparkles",   color: "#8b5cf6" },
-  { name: "command", slug: "commands", icon: "Terminal",   color: "#f97316" },
-  { name: "note",    slug: "notes",    icon: "StickyNote", color: "#fde047" },
-  { name: "file",    slug: "files",    icon: "File",       color: "#6b7280" },
-  { name: "image",   slug: "images",   icon: "Image",      color: "#ec4899" },
-  { name: "link",    slug: "links",    icon: "Link",       color: "#10b981" },
+	{ name: 'snippet', slug: 'snippets', icon: 'Code', color: '#3b82f6' },
+	{ name: 'prompt', slug: 'prompts', icon: 'Sparkles', color: '#8b5cf6' },
+	{ name: 'command', slug: 'commands', icon: 'Terminal', color: '#f97316' },
+	{ name: 'note', slug: 'notes', icon: 'StickyNote', color: '#fde047' },
+	{ name: 'file', slug: 'files', icon: 'File', color: '#6b7280' },
+	{ name: 'image', slug: 'images', icon: 'Image', color: '#ec4899' },
+	{ name: 'link', slug: 'links', icon: 'Link', color: '#10b981' },
 ];
 ```
 
@@ -424,20 +424,20 @@ const systemTypes = [
 
 ### Stack
 
-| Layer | Choice | Notes |
-|---|---|---|
-| Framework | **Next.js 16** (App Router) + **React 19** | SSR pages with dynamic client components |
-| Language | **TypeScript** | End-to-end type safety |
-| Backend | Next.js **API routes / Server Actions** | Items CRUD, file uploads, AI calls |
-| Database | **Neon** (serverless PostgreSQL) | |
-| ORM | **Prisma 7** | Neon driver adapter; migrations only |
-| Cache | **Redis** *(maybe)* | e.g. Upstash, for caching or rate limits |
-| File storage | **Cloudflare R2** | S3-compatible; presigned uploads |
-| Auth | **Auth.js (NextAuth) v5** | Credentials + GitHub OAuth |
-| AI | **OpenAI `gpt-5-nano`** | Pro-only features |
-| Payments | **Stripe** | Subscriptions + webhooks |
-| Styling | **Tailwind CSS v4** + **shadcn/ui** | Lucide icons |
-| Repo | Single codebase | Less overhead |
+| Layer        | Choice                                     | Notes                                    |
+| ------------ | ------------------------------------------ | ---------------------------------------- |
+| Framework    | **Next.js 16** (App Router) + **React 19** | SSR pages with dynamic client components |
+| Language     | **TypeScript**                             | End-to-end type safety                   |
+| Backend      | Next.js **API routes / Server Actions**    | Items CRUD, file uploads, AI calls       |
+| Database     | **Neon** (serverless PostgreSQL)           |                                          |
+| ORM          | **Prisma 7**                               | Neon driver adapter; migrations only     |
+| Cache        | **Redis** _(maybe)_                        | e.g. Upstash, for caching or rate limits |
+| File storage | **Cloudflare R2**                          | S3-compatible; presigned uploads         |
+| Auth         | **Auth.js (NextAuth) v5**                  | Credentials + GitHub OAuth               |
+| AI           | **OpenAI `gpt-5-nano`**                    | Pro-only features                        |
+| Payments     | **Stripe**                                 | Subscriptions + webhooks                 |
+| Styling      | **Tailwind CSS v4** + **shadcn/ui**        | Lucide icons                             |
+| Repo         | Single codebase                            | Less overhead                            |
 
 ### System Architecture
 
@@ -598,21 +598,21 @@ REDIS_URL=
 
 Freemium model.
 
-| Feature | Free | Pro |
-|---|:---:|:---:|
-| **Price** | $0 | **$8/mo** or **$72/yr** (25% off) |
-| Items | 50 total | Unlimited |
-| Collections | 3 | Unlimited |
-| System types (snippet, prompt, note, command, link) | ✅ | ✅ |
-| File & image uploads | ❌ | ✅ |
-| Custom types *(coming later)* | ❌ | ✅ |
-| Search | Basic | Basic *(advanced TBD)* |
-| AI auto-tagging | ❌ | ✅ |
-| AI summaries | ❌ | ✅ |
-| AI code explanation | ❌ | ✅ |
-| AI prompt optimizer | ❌ | ✅ |
-| Export data (JSON / ZIP) | ❌ | ✅ |
-| Priority support | ❌ | ✅ |
+| Feature                                             |   Free   |                Pro                |
+| --------------------------------------------------- | :------: | :-------------------------------: |
+| **Price**                                           |    $0    | **$8/mo** or **$72/yr** (25% off) |
+| Items                                               | 50 total |             Unlimited             |
+| Collections                                         |    3     |             Unlimited             |
+| System types (snippet, prompt, note, command, link) |    ✅    |                ✅                 |
+| File & image uploads                                |    ❌    |                ✅                 |
+| Custom types _(coming later)_                       |    ❌    |                ✅                 |
+| Search                                              |  Basic   |      Basic _(advanced TBD)_       |
+| AI auto-tagging                                     |    ❌    |                ✅                 |
+| AI summaries                                        |    ❌    |                ✅                 |
+| AI code explanation                                 |    ❌    |                ✅                 |
+| AI prompt optimizer                                 |    ❌    |                ✅                 |
+| Export data (JSON / ZIP)                            |    ❌    |                ✅                 |
+| Priority support                                    |    ❌    |                ✅                 |
 
 > 🛠️ **Development mode:** build the Pro gating foundation now (`isPro`, Stripe fields, a central `limits.ts` helper), but **let all users access everything during development**, e.g. behind a `FEATURE_GATING_ENABLED=false` flag.
 
@@ -640,6 +640,10 @@ flowchart TD
 - Subtle borders and shadows
 - Syntax highlighting for code blocks
 - **References:** [Notion](https://www.notion.so), [Linear](https://linear.app), [Raycast](https://www.raycast.com)
+
+## **Design Reference**
+
+See `@context/screenshots/Dashboard.png` for the main dashboarddesign. It does not have to be pixel perfect. Use it as a base.
 
 ### Layout
 
@@ -673,18 +677,26 @@ flowchart LR
 
 Icons come from [Lucide](https://lucide.dev/icons), the default icon set for shadcn/ui (`lucide-react`).
 
-| Type | Color | Hex | Lucide Icon |
-|---|---|---|---|
-| Snippet | 🔵 Blue | `#3b82f6` | [`Code`](https://lucide.dev/icons/code) |
-| Prompt | 🟣 Purple | `#8b5cf6` | [`Sparkles`](https://lucide.dev/icons/sparkles) |
-| Command | 🟠 Orange | `#f97316` | [`Terminal`](https://lucide.dev/icons/terminal) |
-| Note | 🟡 Yellow | `#fde047` | [`StickyNote`](https://lucide.dev/icons/sticky-note) |
-| File | ⚪ Gray | `#6b7280` | [`File`](https://lucide.dev/icons/file) |
-| Image | 🩷 Pink | `#ec4899` | [`Image`](https://lucide.dev/icons/image) |
-| Link | 🟢 Emerald | `#10b981` | [`Link`](https://lucide.dev/icons/link) |
+| Type    | Color      | Hex       | Lucide Icon                                          |
+| ------- | ---------- | --------- | ---------------------------------------------------- |
+| Snippet | 🔵 Blue    | `#3b82f6` | [`Code`](https://lucide.dev/icons/code)              |
+| Prompt  | 🟣 Purple  | `#8b5cf6` | [`Sparkles`](https://lucide.dev/icons/sparkles)      |
+| Command | 🟠 Orange  | `#f97316` | [`Terminal`](https://lucide.dev/icons/terminal)      |
+| Note    | 🟡 Yellow  | `#fde047` | [`StickyNote`](https://lucide.dev/icons/sticky-note) |
+| File    | ⚪ Gray    | `#6b7280` | [`File`](https://lucide.dev/icons/file)              |
+| Image   | 🩷 Pink    | `#ec4899` | [`Image`](https://lucide.dev/icons/image)            |
+| Link    | 🟢 Emerald | `#10b981` | [`Link`](https://lucide.dev/icons/link)              |
 
 ```tsx
-import { Code, Sparkles, Terminal, StickyNote, File, Image, Link } from "lucide-react";
+import {
+	Code,
+	Sparkles,
+	Terminal,
+	StickyNote,
+	File,
+	Image,
+	Link,
+} from 'lucide-react';
 ```
 
 > 💡 These colors match Tailwind's palette (`blue-500`, `violet-500`, `orange-500`, `yellow-300`, `gray-500`, `pink-500`, `emerald-500`). Yellow `#fde047` is light, so use dark text on it.
@@ -703,29 +715,29 @@ import { Code, Sparkles, Terminal, StickyNote, File, Image, Link } from "lucide-
 
 ### Suggested UI libraries
 
-| Need | Option |
-|---|---|
-| Syntax highlighting | [Shiki](https://shiki.style) |
-| Code editor | [CodeMirror](https://codemirror.net) or [Monaco](https://microsoft.github.io/monaco-editor/) |
-| Markdown editor/render | [react-markdown](https://github.com/remarkjs/react-markdown), [MDXEditor](https://mdxeditor.dev) |
-| Command palette / search | shadcn [Command](https://ui.shadcn.com/docs/components/command) (cmdk) |
-| Drawer | shadcn [Sheet](https://ui.shadcn.com/docs/components/sheet) / [Drawer](https://ui.shadcn.com/docs/components/drawer) |
-| Theme switching | [next-themes](https://github.com/pacocoursey/next-themes) |
+| Need                     | Option                                                                                                               |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| Syntax highlighting      | [Shiki](https://shiki.style)                                                                                         |
+| Code editor              | [CodeMirror](https://codemirror.net) or [Monaco](https://microsoft.github.io/monaco-editor/)                         |
+| Markdown editor/render   | [react-markdown](https://github.com/remarkjs/react-markdown), [MDXEditor](https://mdxeditor.dev)                     |
+| Command palette / search | shadcn [Command](https://ui.shadcn.com/docs/components/command) (cmdk)                                               |
+| Drawer                   | shadcn [Sheet](https://ui.shadcn.com/docs/components/sheet) / [Drawer](https://ui.shadcn.com/docs/components/drawer) |
+| Theme switching          | [next-themes](https://github.com/pacocoursey/next-themes)                                                            |
 
 ---
 
 ## 8. Routes
 
-| Route | Purpose |
-|---|---|
-| `/` | Marketing / landing page |
-| `/sign-in`, `/sign-up` | Authentication |
-| `/dashboard` | Collections grid + pinned/recent items |
-| `/items/[type]` | All items of a type, e.g. `/items/snippets` |
-| `/collections/[id]` | Single collection |
-| `/favorites` | Favorite items & collections |
-| `/settings` | Profile, theme, export, billing |
-| `/pricing` | Plans & upgrade |
+| Route                  | Purpose                                     |
+| ---------------------- | ------------------------------------------- |
+| `/`                    | Marketing / landing page                    |
+| `/sign-in`, `/sign-up` | Authentication                              |
+| `/dashboard`           | Collections grid + pinned/recent items      |
+| `/items/[type]`        | All items of a type, e.g. `/items/snippets` |
+| `/collections/[id]`    | Single collection                           |
+| `/favorites`           | Favorite items & collections                |
+| `/settings`            | Profile, theme, export, billing             |
+| `/pricing`             | Plans & upgrade                             |
 
 ---
 
@@ -767,20 +779,20 @@ Other conventions:
 
 ## 11. Resources & Links
 
-| Tool | Docs |
-|---|---|
-| Next.js | https://nextjs.org/docs |
-| React | https://react.dev |
-| TypeScript | https://www.typescriptlang.org/docs |
-| Prisma | https://www.prisma.io/docs |
-| Prisma + Neon | https://www.prisma.io/docs/orm/overview/databases/neon |
-| Neon | https://neon.com/docs |
-| Auth.js (NextAuth v5) | https://authjs.dev |
-| Auth.js Prisma Adapter | https://authjs.dev/getting-started/adapters/prisma |
-| Cloudflare R2 | https://developers.cloudflare.com/r2 |
-| OpenAI API | https://platform.openai.com/docs |
-| Stripe Subscriptions | https://docs.stripe.com/billing/subscriptions/overview |
-| Tailwind CSS v4 | https://tailwindcss.com/docs |
-| shadcn/ui | https://ui.shadcn.com |
-| Lucide Icons | https://lucide.dev |
-| Upstash Redis | https://upstash.com/docs/redis |
+| Tool                   | Docs                                                   |
+| ---------------------- | ------------------------------------------------------ |
+| Next.js                | https://nextjs.org/docs                                |
+| React                  | https://react.dev                                      |
+| TypeScript             | https://www.typescriptlang.org/docs                    |
+| Prisma                 | https://www.prisma.io/docs                             |
+| Prisma + Neon          | https://www.prisma.io/docs/orm/overview/databases/neon |
+| Neon                   | https://neon.com/docs                                  |
+| Auth.js (NextAuth v5)  | https://authjs.dev                                     |
+| Auth.js Prisma Adapter | https://authjs.dev/getting-started/adapters/prisma     |
+| Cloudflare R2          | https://developers.cloudflare.com/r2                   |
+| OpenAI API             | https://platform.openai.com/docs                       |
+| Stripe Subscriptions   | https://docs.stripe.com/billing/subscriptions/overview |
+| Tailwind CSS v4        | https://tailwindcss.com/docs                           |
+| shadcn/ui              | https://ui.shadcn.com                                  |
+| Lucide Icons           | https://lucide.dev                                     |
+| Upstash Redis          | https://upstash.com/docs/redis                         |
